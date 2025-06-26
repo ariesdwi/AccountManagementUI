@@ -5,20 +5,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "AccountManagementUI",
+    name: "BRIAccountManagementSDK",
     platforms: [.iOS(.v14)],  // Min. iOS version
     products: [
         .library(
-            name: "AccountManagementUI",
-            targets: ["AccountManagementUI"]),
+            name: "BRIAccountManagementSDK",
+            targets: ["BRIAccountManagementSDK"]),
     ],
     targets: [
         .target(
-            name: "AccountManagementUI",
-            path: "Sources/AccountManagementUI"
+            name: "BRIAccountManagementSDK",
+            path: "Sources/BRIAccountManagementSDK"
         ),
         .testTarget(
-            name: "AccountManagementUITests",
-            dependencies: ["AccountManagementUI"]),
+            name: "BRIAccountManagementSDKTests",
+            dependencies: ["BRIAccountManagementSDK"]),
     ]
 )
