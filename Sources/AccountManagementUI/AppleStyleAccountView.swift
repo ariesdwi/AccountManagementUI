@@ -8,20 +8,6 @@
 
 import SwiftUI
 
-public struct UserProfile {
-    public let initials: String
-    public let fullName: String
-    public let email: String
-    public let points: Int
-
-    public init(initials: String, fullName: String, email: String, points: Int) {
-        self.initials = initials
-        self.fullName = fullName
-        self.email = email
-        self.points = points
-    }
-}
-
 @available(iOS 14.0, *)
 public struct AppleStyleAccountView: View {
     public let user: UserProfile
